@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 
 # Load model
-model = load_model('next_word_LSTM.h5')
+model = load_model('next_word_LSTM.h5', compile=False)
 
 # Load tokenizer
 with open('tokenizer.pickle', 'rb') as handle:
